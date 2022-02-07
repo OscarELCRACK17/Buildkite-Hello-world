@@ -1,6 +1,7 @@
+
 steps:
   - label: ":hammer: Example Script"
     command: "script.sh"
     artifact_paths: "artifacts/*"
     agents:
-      docker: "{ image 'node:16.13.1-alpine' }"
+      queue: "${BUILDKITE_AGENT_META_DATA_QUEUE:-default}"
