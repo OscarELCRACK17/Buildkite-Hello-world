@@ -1,0 +1,2 @@
+production:
+  auto_deploy_on: refs/heads/master
