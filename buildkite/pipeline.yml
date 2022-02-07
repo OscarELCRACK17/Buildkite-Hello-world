@@ -1,8 +1,6 @@
-agents:
-  queue: "something"
-
 steps:
-  - command: echo "hello to my first Build"
-  - label: "Yada"
+  - label: ":hammer: Example Script"
+    command: "script.sh"
+    artifact_paths: "artifacts/*"
     agents:
-      queue: "other"
+      docker: "{ image 'node:16.13.1-alpine' }"
