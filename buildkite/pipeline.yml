@@ -2,7 +2,7 @@ agents:
   queue: "something"
 
 steps:
-  - command: "Hello-world.sh"
+  - command: echo "hello to my first Build"
   - label: "Yada"
     agents:
       queue: "other"
