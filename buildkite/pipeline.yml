@@ -1,6 +1,0 @@
-steps:
-  - label: ":hammer: Example Script"
-    command: "script.sh"
-    artifact_paths: "artifacts/*"
-    agents:
-      docker: "{ image 'node:16.13.1-alpine' }"
